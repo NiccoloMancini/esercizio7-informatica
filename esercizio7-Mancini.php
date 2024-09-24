@@ -8,8 +8,8 @@
   </head>
   <body>
     <?php
-        $x = rand(1,30);
-        $y = rand(1,30);
+        $x = rand(1,40);
+        $y = rand(1,40);
         $max;
         if ($x>$y) {
             echo "<h1> $x è maggiore di $y </h1>";
@@ -26,8 +26,10 @@
             echo "<h1> $max minore di 10 </h1>";
         } elseif ($max >= 10 && $max <= 20){
             echo "<h1> $max compreso tra 10 e 20 </h1>";
-        } else {
+        } elseif ($max >= 21 && $max <= 30){
             echo "<h1> $max compreso tra 21 e 30 </h1>";
+        } else {
+            echo "<h1> $max è maggiore di 30 </h1>";
         }
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
